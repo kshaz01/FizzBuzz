@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Domain", "FizzBuzz.Domain\FizzBuzz.Domain.csproj", "{4DFA2C05-10E3-40D5-B9C2-52F9EB2D8473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Web", "FizzBuzz.Web\FizzBuzz.Web.csproj", "{9E272017-6566-4AB5-B149-AF39137F171E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz.Tests", "FizzBuzz.Tests\FizzBuzz.Tests.csproj", "{AFC4DA3D-118D-4748-86B0-3502DAB43F01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5B6B5EB6-AC69-4C17-8D6F-675DC3689C2B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DFA2C05-10E3-40D5-B9C2-52F9EB2D8473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFA2C05-10E3-40D5-B9C2-52F9EB2D8473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFA2C05-10E3-40D5-B9C2-52F9EB2D8473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFA2C05-10E3-40D5-B9C2-52F9EB2D8473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E272017-6566-4AB5-B149-AF39137F171E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E272017-6566-4AB5-B149-AF39137F171E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E272017-6566-4AB5-B149-AF39137F171E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E272017-6566-4AB5-B149-AF39137F171E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC4DA3D-118D-4748-86B0-3502DAB43F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC4DA3D-118D-4748-86B0-3502DAB43F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC4DA3D-118D-4748-86B0-3502DAB43F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC4DA3D-118D-4748-86B0-3502DAB43F01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

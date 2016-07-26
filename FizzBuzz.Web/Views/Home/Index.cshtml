@@ -1,0 +1,23 @@
+﻿@model FizzBuzz.Web.Models.AppViewModel
+
+<div ng-controller="fizzBuzzCtrl" class="jumbotron main-box">
+    <div>
+        <h2>@Model.AppItem.Heading</h2>
+
+        @Model.AppItem.Summary
+
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <input type="number" ng-model="input" ng-change="getFizzBuzz(input)" name="input_field" ng-pattern="myRegex" required />
+            </div>
+            <span ng-show="input_field.$error.pattern">Not a valid number!</span>
+        </div>
+
+        <p>
+            <ol type="1">
+                <li ng-repeat="val in result track by $index" class="btn btn-default"
+                    ng-class="{'btn-primary': val=='Fizz','btn-success': val=='Buzz','btn-info': val=='Fizz Buzz'}">{{val}}</li>
+            </ol>
+        </p>
+    </div>
+</div>

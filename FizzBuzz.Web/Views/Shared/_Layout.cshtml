@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz App</title>
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Scripts.Render("~/Scripts/modernizr-2.6.2.js")
+
+</head>
+<body ng-app role="document">
+   
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/myapp" class="navbar-brand">Fizz Buzz App</a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" role="main">
+
+        @Html.Sitecore().Placeholder("BodyContent")
+
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Fizz Buzz App</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script language="javascript">
+        function fizzBuzzCtrl($scope, $http) {
+            $scope.input = 1;
+            $scope.result = "1";
+            $scope.myRegex = /^[1-9][0-9]?$|^200$/;
+            $scope.getFizzBuzz = function (val) {
+                $http.get('/api/sitecore/home/FizzBuzz?input=' + val).success(function (data) {
+                    $scope.result = data;
+                })
+            }
+        }
+    </script>
+</body>
+</html>
