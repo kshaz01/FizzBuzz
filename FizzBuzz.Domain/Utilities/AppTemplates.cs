@@ -8,6 +8,6 @@ namespace FizzBuzz.Domain.Utilities
 {
   public  class AppTemplates
     {
-      public static readonly Guid AppTemplateID = new Guid("53C55803-7259-4A6B-9FF6-776085A65161");
+      public static readonly Guid AppTemplateID = new Guid("{972460FC-A8B3-4F01-B20D-C1FC42BB7540}");
     }
 }
